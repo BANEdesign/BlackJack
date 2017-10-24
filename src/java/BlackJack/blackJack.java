@@ -1,3 +1,4 @@
+
 package BlackJack;
 import java.util.ArrayList;
 
@@ -46,12 +47,13 @@ public class blackJack {
             ArrayList<Integer> intCards = new ArrayList<>();
             if(!(p.hand.isBlackJack(p.hand.cards) && !(d.hand.isBlackJack(d.hand.cards)))){
                 if(wantsToHit()){
-                    p.hand.hit();
-                    for(Card c : p.hand.cards){ //TODO this really needs to be a method in a class
-                        intCards.add(c.cardsToNumbers(c.value));
-                        p.hand.countHand(intCards);
-                        dealer.compareHands();
-                    }
+                    p.hand.addCard(deck.dealCard());
+                    p.hand.hit(p.hand.cards);
+//                    for(Card c : p.hand.cards){ //TODO this really needs to be a method in a class
+//                        intCards.add(c.cardsToNumbers(c.value));
+//                        p.hand.countHand(intCards);
+//                        dealer.compareHands();
+//                    }
                 }else{
                     d.dealerMoves();
                     dealer.compareHands();

@@ -61,21 +61,24 @@ public class Hand {
     }
 
     public void addCard(Card card){
+
         cards.add(card);
 
     }
-    public void hit(){
+    public void hit(ArrayList<Card> cards){
         int cardCount;
         ArrayList<Integer> intCards = new ArrayList<>();
-        addCard(deck.dealCard());
+
         for(Card card : cards){
             intCards.add(card.cardsToNumbers(card.value)); //changes cards in hand to numbers and adds them to intCards
         }
         cardCount = countHand(intCards);
+
         if(isBust(cardCount)){
             System.out.println("BUST! You lose");  //TODO add end of round
             dealer.addPoints(player.bet);
             player.displayPoints();
+
         }else{
             System.out.println("Player chooses to stay");
             displayHand(cards);

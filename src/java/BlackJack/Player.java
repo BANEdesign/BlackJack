@@ -1,6 +1,8 @@
 package BlackJack;
 
 
+import java.util.ArrayList;
+
 public class Player {
 
     String name;
@@ -17,6 +19,9 @@ public class Player {
     public void setHand(Hand hand){
         this.hand = hand;
     }
+
+    public ArrayList<Card> getHand(){return this.hand.cards;}
+
 
     public void placeBet(int bet){
         //There must be a min and max bet, max should be their total points currently

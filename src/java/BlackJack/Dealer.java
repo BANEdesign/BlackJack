@@ -38,7 +38,7 @@ public class Dealer extends Player {
                 this.addPoints(playersBet);
                 break;
             } else {
-                this.hand.hit();
+                this.hand.hit(this.hand.cards);
             }
         tempList.clear();
     }
