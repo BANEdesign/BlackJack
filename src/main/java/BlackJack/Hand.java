@@ -2,11 +2,8 @@ package BlackJack;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 import static BlackJack.blackJack.dealer;
-import static BlackJack.blackJack.deck;
 import static BlackJack.blackJack.player;
 
 public class Hand {

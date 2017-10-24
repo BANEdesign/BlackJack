@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="edu.minneapolis:input-utils:1.0.2" type="repository">
+    <properties maven-id="edu.minneapolis:input-utils:1.0.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/input-utils-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/input-utils-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
